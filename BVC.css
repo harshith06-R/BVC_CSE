@@ -1,0 +1,25 @@
+.no-padding {
+    padding: 0px !important;
+}
+.no-margin {
+    margin: 0px !important;
+}
+
+
+.image-container {
+    height: 508px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.overlay-txt{
+   position: absolute;
+  top: 66px;
+  left: 117px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+      z-index: 1;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
