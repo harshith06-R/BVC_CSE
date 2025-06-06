@@ -1,25 +1,45 @@
+ /* Common Styles */
 .no-padding {
     padding: 0px !important;
 }
 .no-margin {
     margin: 0px !important;
 }
+.text-align {
+    text-align: center;
+}
 
-
+/* Header Styles */
 .image-container {
-    height: 508px;
+    height: 400px;
     object-fit: cover;
+    object-position: center 60%;
     opacity: 0.7;
 }
 
-.overlay-txt{
-   position: absolute;
-  top: 66px;
-  left: 117px;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-      z-index: 1;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+.overlay-txt {
+    color: black;
+    font-size: 25px;
+}
+.subject {
+    background-color: var(--surface-color);
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 150px;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;      /* 👈 vertically center */
+    justify-content: center;  /* 👈 horizontally center */
+}
+
+.accordion-button:hover {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+/* Optional: Prevent background on active state */
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: inherit;
+  box-shadow: none;
 }
